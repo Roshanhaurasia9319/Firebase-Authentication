@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} 
+
+
+
+
+
+.formContainer{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.212);
+    height: 70vh;
+    width: 30vw;
+    border-radius: 20px;
+}
+
+input{
+    height: 5vh;
+    width: 25vw;
+    font-size: larger;
+    border-radius: 20px;
+    border-style: none;
+    border: 1px solid blue;
+    padding: 5px;
+}
+
+.btn1{
+    height: 6vh;
+    width: 7vw;
+    color: white;
+    background-color: rgba(8, 235, 8, 0.459);
+    border: unset;
+   border-radius: 7px;
+}
+.btn2{
+    height: 6vh;
+    width: 7vw;
+    border: unset;
+    background-color: rgba(0, 0, 255, 0.397);
+    color: white;
+    border-radius: 7px;
+}
+.btn3{
+    height: 6vh;
+    width: 7vw;
+    border: unset;
+    background-color: rgba(255, 0, 0, 0.404);
+    color: white;
+    border-radius: 7px;
+}
+
+.btn1:hover{
+  background-color: green;
+}
+.btn2:hover{
+    background-color: blue;
+  }
+  .btn3:hover{
+    background-color: red;
+  }
+
+  @media only screen and (max-width: 900px){
+
+    .formContainer{
+        text-align: center;
+        border: unset;
+        /* background-color: unset; */
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.363);
+        width: 200vw;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+    input{
+        height: 5vh;
+        width: 90vw;
+    }
+    .btn1, .btn2, .btn3{
+        width: 10vh;
+    }
+  }
